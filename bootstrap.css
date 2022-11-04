@@ -1,0 +1,304 @@
+body{
+margin: 0;
+background-color: #ffff;
+}
+
+.header{
+	display: flex;
+	justify-content: space-around;
+	background-color: #e0ebeb;
+	max-height: 100%;
+}
+.header_logo{
+	display: flex;
+	padding: 40px;
+
+}
+.header_img{
+	padding-right: 30px	;
+}
+.header_contact{
+	margin-top: 100px;
+}
+.header_contact a{
+	font-size: 24px;
+	text-decoration: none;
+	background-color: #1aff1a;
+	padding: 8px;
+	color: white;
+	border-radius: 5px;
+
+	
+}
+
+
+@media screen and (max-width: 750px){
+
+	.header{
+	display: flex;
+	flex-direction: column;
+	background-color: #e0ebeb;
+	text-align: center;	
+}
+.header_logo{
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+}
+.header_contact{
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+}
+/*---------------------------------------------------------------------*/
+
+.container{
+	background-color:  #94b8b8;
+	padding-top: 50px;
+}
+.containers{
+	display: grid;
+	grid-template-columns: 1fr 0.5fr;
+	max-width: 90%;
+	margin: 0 auto;
+	justify-content: center;
+	gap: 1em;
+}
+
+@media screen and (max-width: 750px){
+	.containers {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+}
+
+.container_block{
+	display: grid;
+	gap: 1em;
+}
+
+.cont_about{
+	padding: 15px; 
+	color:  #3d5c5c;
+	background-color: #fff;
+}
+.cont_about p{
+	font-size: 18px;
+}
+
+
+/*=======================================================*/
+
+.cont_project{
+	background-color: #fff;
+	padding: 20px;
+	color: #3d5c5c ;
+}
+.cont_project_main{
+	border-bottom: 1px solid black;
+}
+.cont_project_img{
+	text-align: center;
+	
+	
+}
+.cont_project_img a{
+	color: #3d5c5c;
+	text-decoration: none;
+}
+.cont_project_img a:hover {
+	text-decoration: underline  red;
+}
+.cont_project_img img{
+	max-width: 100%;
+}
+.cont_project_text {
+	text-align: left;
+}
+.cont_project_button{
+	text-align: center;
+	padding: 30px;
+
+
+}
+.cont_project_button a{
+	text-decoration: none;
+	font-size: 18px;
+	color:#ffffff ;
+	background-color: #3399ff;
+	padding: 10px;
+	text-transform: uppercase;
+	border-radius: 4px;
+
+}
+
+.container_new{
+	padding-top: 30px;
+	
+}
+.cont_news{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 2em;
+}
+@media screen and (max-width: 750px){
+.cont_news{
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2em;
+}
+}
+.cont_news_img {
+	padding-top: 15px;
+
+}
+.cont_news_img img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.cont_news_text a{
+	color: green;
+}
+
+/*-------------------------------------------------*/
+
+.container_other-projects{
+	background-color: #fff;
+	padding: 30px;
+}
+
+.container_other-projects h1{
+	color: #3d5c5c;
+}
+.project_titele{
+	padding-bottom: 30px;
+}
+.project_titele h2{
+	color: #3d5c5c;
+}
+.project_titele p{
+	font-size: 17px;
+	line-height: 1.5;
+	color: black;
+}
+.project_titele a{
+	color: green;
+}
+
+..other_button{
+	padding-top: 40px;
+}
+.other_button a{
+	background-color:#3399ff ;
+	color: white;
+	padding: 10px;
+	border-radius: 5px ; 
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.Work_experience{
+	background-color: #fff;
+	padding: 20px;
+
+}
+.Work_experience h1{
+	color: #3d5c5c;
+}
+
+.work_heder_text p{
+	font-size: 20px;
+	color: #3d5c5c;
+	font-weight: 2;
+}
+.work_heder_text a{
+	text-decoration: none;
+	color: grey;
+}
+
+.work_heder_text a:hover{
+	text-decoration: underline;
+}
+.work_heder_p p{
+	font-size: 17px;
+	line-height: 1.5;
+}
+
+.container_select{
+	
+	
+	
+	
+}
+
+.select_maps{
+	padding: 25px;
+	line-height: 2;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+.select_maps h3{
+	padding: 0;
+	margin: 0;
+}
+.select_maps a{
+	text-decoration: none;
+	color: green;
+}
+.select_maps a:hover{
+	text-decoration: underline;
+}
+
+
+/*--------------------------------------------*/
+
+.select_skills{
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+
+
+}
+.header_skills h1{
+	padding: 0;
+}
+
+.skills_bag{
+  width: 100%;
+  background-color: #ddd;
+}
+.skill {
+  text-align: right;
+  padding-top: 10px;
+  
+  color: white;
+}
+.html {width: 90%; background-color: #04AA6D;}
+.javascript {width: 80%; background-color: #2196F3;}
+.php {width: 70%; background-color: #f44336;}
+.ruby {width: 60%; background-color: #808080;}
+
+.skill_a{
+	padding-top: 30px;
+}
+.skill_a a{
+	color: green;
+	text-decoration: none;
+
+}
+.skill_a a:hover{
+	color: green;
+	text-decoration:underline;
+	
+}
+
+/*-------------------------------------*/
+.select_testimonials{
+	background-color: #fff;
+	padding: 20px;
+}
+.testimonials_p p{
+	border-left: 4px solid green;
+	padding: 5px;
+	line-height:1.5;
+}
